@@ -28,4 +28,7 @@ RUN apt-get install -y ansible
 RUN ansible --version
 RUN echo "host_key_checking = False" > ~/.ansible/ansible.cfg
 
+#### Install JQ
+RUN apt-get install -y jq
+
 USER Jenkins
